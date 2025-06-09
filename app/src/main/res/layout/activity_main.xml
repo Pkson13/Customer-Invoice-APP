@@ -10,8 +10,14 @@
         android:layout_height="wrap_content">
 
         <!-- Customer Info -->
-        <EditText android:inputType="text" android:id="@+id/nameInput" android:hint="Name" android:layout_width="match_parent" android:layout_height="wrap_content"/>
-        <EditText android:id="@+id/phoneInput" android:hint="@string/app_name" android:inputType="phone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="text" />
+
+        <EditText android:id="@+id/phoneInput" android:hint="Phone" android:inputType="phone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
         <EditText android:id="@+id/emailInput" android:hint="Email" android:layout_width="match_parent" android:layout_height="wrap_content"/>
 
         <!-- Invoice Item -->
@@ -23,5 +29,27 @@
 
         <!-- Output -->
         <TextView android:id="@+id/invoiceOutput" android:textSize="16sp" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="10dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
     </LinearLayout>
 </ScrollView>
